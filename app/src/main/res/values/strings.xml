@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Looksmaxing App</string>
+    
+    <!-- Main Activity -->
+    <string name="welcome_title">Dobrodošli v Looksmaxing Aplikaciji</string>
+    <string name="welcome_subtitle">Vaš vodnik do boljšega videza in samozavesti</string>
+    
+    <!-- Menu Items -->
+    <string name="daily_routine">Dnevna rutina</string>
+    <string name="routine_description">Sledite svojim dnevnim navam za boljši videz</string>
+    
+    <string name="tips_advice">Nasveti in vodila</string>
+    <string name="tips_description">Učite se o negovanja kože, prehrani in življenjskem slogu</string>
+    
+    <string name="progress_tracking">Sledenje napredku</string>
+    <string name="progress_description">Spremljajte svoj napredek skozi čas</string>
+    
+    <!-- Activity Titles -->
+    <string name="daily_routine_title">Vaša dnevna rutina</string>
+    <string name="tips_title">Nasveti za izboljšanje</string>
+    <string name="progress_title">Vaš napredek</string>
+    
+    <!-- Buttons -->
+    <string name="add_day">Dodaj dan</string>
+    
+    <!-- General -->
+    <string name="completed">Opravljeno</string>
+    <string name="not_completed">Ni opravljeno</string>
+</resources>
